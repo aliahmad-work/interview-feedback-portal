@@ -1,0 +1,43 @@
+<div class="login-card">
+
+  <div class="login-header">
+    <img class="login-header-img" src="assets/images/login-card-logo.svg" width="56" height="52">
+    <h2 class="login-header-text">Interview Feedback</h2>
+    <p>P O R T A L</p>
+    <div class="after-devider-text">Sign-in to your account</div>
+  </div>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+    <label for="email-input" class="login-form-label">Email</label>
+    <input type="email" id="email-input" class="login-form-input" formControlName="email" placeholder="Enter your email">
+    <div *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid" class="error-message">
+      <small *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</small>
+      <small *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format</small>
+    </div><br>
+    <label for="password-input" class="login-form-label">Password</label>
+    <input type="password" id="password-input" class="login-form-input" formControlName="password" placeholder="Enter your password">
+    <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="error-message">
+      <small *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</small>
+    </div><br>
+    <div class="remember-me-link-container">
+      <label><input type="checkbox" class="remember-me-checkbox">Remember me</label>
+      <a href="" class="forget-password">Forget password?</a>
+    </div>
+    <button type="submit" class="sign-in-button" [disabled]="loginForm.invalid">Sign In</button>
+  </form>
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <h3 class="devider-margin-text">OR</h3>
+
+  <div class="login-card-footer">Need Help? Contact 
+    <a href="" class="contact-administrator">HR Admin</a>
+  </div>
+
+</div>

@@ -1,0 +1,127 @@
+.login-card {
+  width: 400px;
+  max-width: 540px;
+  height: 550px;
+  max-height: 700px;
+  background-color: #fef7e7;
+  border-radius: 40px;
+  margin: 1rem auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.login-card,
+.login-card * {
+  font-family: 'Manrope', sans-serif;
+}
+
+.login-header {
+  p {
+    color: #C48E1A;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-header-img {
+    margin-top: 0.2rem;
+  }
+
+  .login-header-text {
+    margin: 8px 0;
+  }
+
+  .devider-margin {
+    color: #C48E1A;
+  }
+
+  .after-devider-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
+    font-size: small;
+  }
+}
+
+.login-form {
+  text-align: left;
+  margin: 1.5rem 0;
+
+  .login-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #131313;
+
+  }
+
+  .login-form-input {
+    height: 26px;
+    width: 360px;
+    /* max-width: 410px; */
+    padding: 10px 12px;
+    margin-bottom: 0.25rem;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .login-form-input:focus {
+    border-color: #C48E1A;
+    outline: none;
+  }
+
+  .remember-me-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .forget-password {
+    text-align: right;
+    color: #C48E1A;
+  }
+
+  .sign-in-button {
+    height: 48px;
+    width: 390px;
+    margin-top: 12px;
+    background-color: #C48E1A;
+    border: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+
+  .google-sign-in-button {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 340px;
+    background-color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+  }
+}
+
+.devider-margin-text {
+  color: #999999;
+  font-family: 'Manrope', sans-serif;
+  font-size: small;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login-card-footer {
+  font-size: small;
+
+  .contact-administrator {
+    color: #C48E1A;
+    font-size: small;
+  }
+}
